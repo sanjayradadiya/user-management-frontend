@@ -1,0 +1,26 @@
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    height: 2.5rem;
+    padding-top: 40px;
+
+    .footer-bottom {
+        background-color: #f8f9fa!important;
+        padding: 7px 0;
+        color: #333;
+
+        p {
+            color: #000;
+        }
+
+        a {
+            color: #ccc;
+        }
+
+        .container {
+            padding-top: 14px;
+        }
+    }
+}

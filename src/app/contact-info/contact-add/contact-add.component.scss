@@ -1,0 +1,29 @@
+.form-wrapper {
+
+    margin-top: 20px;
+
+    h1 {
+        margin-bottom: 30px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #167AF6;
+    }
+
+    .invalid-feedback {
+        display: block;
+    }
+    
+    [required]>label::after {
+        content: '*';
+        color: red;
+        font-weight: bold;
+        padding-left: 3px;
+    }
+
+    button{
+        margin-top: 10px;
+    }
+
+    button + button {
+        margin-left: 10px;
+    }
+}

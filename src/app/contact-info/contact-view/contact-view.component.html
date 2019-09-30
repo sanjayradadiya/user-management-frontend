@@ -1,0 +1,43 @@
+<div class="contactview_wrapper">
+  <h1>
+    Contact Detail Info
+  </h1>
+  <a [routerLink]="[ '/contact/list']" class="back-button">{{'< Back'}}</a>
+
+
+  <div>
+    <table class="table table-bordered">
+      <tbody>
+        <ng-container *ngIf="isLoading">
+          <tr>
+            <td colspan="2">
+              Please wait ....
+            </td>
+          </tr>
+        </ng-container>
+        <ng-container *ngIf="!isLoading">
+          <tr>
+            <td>Name</td>
+            <td>{{contact.name}}</td>
+          </tr>
+          <tr>
+            <td>Email</td>
+            <td>{{contact.email}}</td>
+          </tr>
+          <tr>
+            <td>Gender</td>
+            <td>{{contact.gender}}</td>
+          </tr>
+          <tr>
+            <td>Date of Birth</td>
+            <td>{{contact.dob |  date : 'dd-MM-yyyy'}}</td>
+          </tr>
+          <tr>
+            <td>Budget</td>
+            <td>{{contact.budget}}</td>
+          </tr>
+        </ng-container>
+      </tbody>
+    </table>
+  </div>
+</div>
